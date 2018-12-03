@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Katalog sukienek</title>
+    <meta name="description" content="Znajdż wymarzony model swojej sukienki">
+    <meta name="keywords" content="suknie, katalog, sukienki, odzież">
+    <meta name="author" content="AW">
+
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Znajdź wymarzoną sukienkę</h1>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <form action="order.php" method="POST">
+
+                <div class="row">
+
+                    <fieldset>
+
+                        <legend>Kolor sukni</legend>
+
+                        <div><label><input type="radio" value="1" name="kolor"> Czerwony</label></div>
+                        <div><label><input type="radio" value="2" name="kolor"> Czarny</label></div>
+                        <div><label><input type="radio" value="3" name="kolor"> Zielony</label></div>
+                        <div><label><input type="radio" value="4" name="kolor"> Żółty</label></div>
+                        <div><label><input type="radio" value="5" name="kolor"> Różowy</label></div>
+                        <div><label><input type="radio" value="6" name="kolor"> Niebieski</label></div>
+
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <label for="rekaw">Rodzaj rękawa</label>
+                    <select id="rekaw">
+
+						<option value="k">Krótki rękaw</option>
+						<option value="d">Długi rękaw</option>
+						<option value="r">Rękaw 3/4</option>
+						<option value="b">Bez rękawa</option>
+
+					</select>
+                </div>
+
+                <div class="row">
+
+                    <fieldset>
+                        <legend>Cechy sukni</legend>
+
+                        <div class="col">
+                            <div><label><input type="checkbox" name="cechy[]" value="1">Z nadrukiem</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="2">Mini</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="3">Midi</label></div>
+                        </div>
+
+                        <div class="col">
+                            <div><label><input type="checkbox" name="cechy[]" value="4">Maxi</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="5">Jeansowa</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="6">Gładka</label></div>
+                        </div>
+
+                        <div class="col">
+                            <div><label><input type="checkbox" name="cechy[]" value="7">Wzorzysta</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="8">Przez głowę</label></div>
+                            <div><label><input type="checkbox" name="cechy[]" value="9">Kombinezon</label></div>
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="row">
+
+                    <fieldset>
+
+                        <legend>Rozmiar</legend>
+
+                        <div><label><input type="radio" value="1" name="rozmiar"> XS</label></div>
+                        <div><label><input type="radio" value="2" name="rozmiar"> S</label></div>
+                        <div><label><input type="radio" value="3" name="rozmiar"> M</label></div>
+                        <div><label><input type="radio" value="4" name="rozmiar"> L</label></div>
+                        <div><label><input type="radio" value="5" name="rozmiar"> XL</label></div>
+
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <label> Ilość sukienek <input type="number" step="1"></label>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Zamawiam!">
+                </div>
+
+
+
+            </form>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>
