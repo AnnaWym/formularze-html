@@ -110,6 +110,25 @@
             </div>
 
             <div class="row">
+                <label> Adres e-mail <input id="mail" type="email" name="email" required></label>
+                <label> Numer telefonu <input id="tel" type="tel" name="telefon" required></label>
+            </div>
+
+            <div class="row">
+                <label> Data dostawy <input type="date" id="data" name="data"></label>
+                <label> Godzina dostawy <input type="time" id="godzina" name="czas" min="09:00" max="18:00"></label>
+            </div>
+
+            <div class="row">
+                <div><label for="komentarz"> Uwagi do zamówienia </label></div>
+                <textarea name="komentarz" id="komentarz" rows="6" cols="80" maxlength="250"></textarea>
+            </div>
+
+            <div class="row">
+                <label> Stopień realizacji zamówienia </label><progress id="realizacja" max="100" value="25"></progress>
+            </div>
+
+            <div class="row">
                 <input type="submit" value="Zamawiam!" onclick="wyswietlZamowienie()">
             </div>
 
